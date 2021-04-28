@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <div id="container">
+        <h1 id="header-txt">Wallet App</h1>
+      </div>
+    </header>
+    <div id="main-container" class="flex-container">
+      <img src="./images/ghost.svg" alt="ghost" srcset="" class="ghost-img" />
+      <h2 class="ops-header">Ooops!</h2>
+      <p class="paragraph">you have no wallets, start by creating one</p>
+      <button id="create-wallet">Create Wallet</button>
+    </div>
+
+    <div class="popup-container">
+      <p>Create new wallet</p>
+
+      <div class="inputs">
+        <div class="name-input">
+          <label for="">Name</label>
+          <input type="text" />
+        </div>
+
+        <div class="radio-input">
+          <label for="">Currency</label>
+          <input type="radio" /> Us Dollars ($) <input type="radio" /> Iraqi
+          Dinnars (IQD)
+        </div>
+
+        <div class="balance-input">
+          <label for="">Balance</label>
+          <input type="text" />
+        </div>
+
+        <div class="description-input">
+          <label for="">Description</label>
+          <input type="text" />
+        </div>
+
+        <div class="btns">
+          <button>Close</button>
+          <button>Create wallet</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

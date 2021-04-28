@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+/* header section */
+#container {
+  background-color: #353a40;
+  padding: 1rem 1rem;
+}
+#header-txt {
+  color: white;
+  font-weight: lighter;
+}
+
+/* content section */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ghost-img {
+  width: 400px;
+  height: 400px;
+  margin: 2rem 0;
+}
+
+.ops-header {
+  font-weight: 500;
+  font-size: xx-large;
+  margin: 8px 0;
+}
+#create-wallet {
+  margin: 10px 0;
+  background-color: #19a3ae;
+  padding: 1rem;
+  border: none;
+  font-size: large;
+  border-radius: 5px;
+  color: white;
+  transition: border 0.3s, color 0.3s, background-color 0.3s;
+}
+
+#create-wallet:hover {
+  cursor: pointer;
+  color: #19a3ae;
+  background-color: white;
+  border: 1px solid #168d96;
+}
