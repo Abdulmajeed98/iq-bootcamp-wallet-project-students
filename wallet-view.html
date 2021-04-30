@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Wallet App</title>
+  </head>
+  <body>
+    <header>
+      <header id="main-header">
+        <div id="container">
+          <h1 id="header-txt">Wallet App</h1>
+
+          <div id="user-wallet">
+            <select name="user-dropdown" id="user-dropdown">
+              <option value="user-1">Majeed's Wallet</option>
+            </select>
+          </div>
+        </div>
+      </header>
+    </header>
+
+    <!-- body content section -->
+    <div class="container-all">
+      <!-- wallet balance title -->
+      <div class="wallet-balance">
+        Wallet Balance:
+        <span class="current-wallet-balance">$11900</span>
+      </div>
+
+      <!-- form section -->
+      <form id="form">
+        <div class="make-transaction-container">
+          <label for="transaction-input">Make a transaction:</label>
+          <br />
+          <div class="row-flex-container">
+            <div class="input-container">
+              <input
+                type="text"
+                id="transaction-input"
+                name="transaction-input"
+                placeholder="50"
+              />
+              <span id="currency">$</span>
+              <span id="current-balance">11900.00</span>
+            </div>
+
+            <div class="toggler-container">
+              <div id="income" class="income-active">Income</div>
+              <div id="expense" class="expense-passive">Expense</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="transaction-notes">
+          <div>
+            <label for="transaction-note-input">Transaction Notes:</label>
+            <br />
+            <div class="input-container">
+              <input
+                type="text"
+                id="transaction-note-input"
+                name="transaction-note-input"
+                placeholder="Lunch"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="transaction-tag-input">Transaction Tags:</label>
+            <br />
+            <div class="input-container">
+              <input
+                type="text"
+                id="transaction-tag-input"
+                name="transaction-tag-input"
+                placeholder="Food, Lifestyle"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label id="hidden-label">hidden</label>
+            <br />
+            <button id="add-transaction" class="add-transaction-btn">
+              Add Transaction
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="transaction-list-container"></div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
